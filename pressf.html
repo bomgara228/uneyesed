@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        //let user = new Object();
+        let arr = [1, 2, 3];
+        let user = {
+            name: 1, 
+            1: 2,
+            2:3 ,
+            
+        };
+        
+        let key = 'name';
+        console.log(arr[0]);
+        console.log(user[key]);
+
+        let user1 = {
+            name: 'Петя', 
+            age: 18,
+            hobby: {
+                sport: {
+                    football: true,
+                }
+            },
+            
+        };
+        user1.surname = 'Петров';
+        //можно легко поменять чтото в обьекте
+        user1.age = 21;
+
+        //Удалить чтото в обьекте
+        delete user1.surname;
+        console.log(user1);
+        console.log(user1.hobby.sport.football);
+        console.log('name' in user1);
+
+        for (let key in user1) {
+            if (typeof user1[key] == 'Object') {
+                for ( let item in user1[key]) {
+                    console.log(`Свойство с ключем ${key} содержит ${user1[key][item]}`);
+                }
+            } else {
+            console.log(`Свойство с ключем ${key} содержит ${user1[key]}`);
+        }
+        }
+        *//*
+        let car = {
+            mark: '',
+            model: '',
+            year: '',
+            as: '',
+            pon: function(aga) {
+            aga.model = prompt('Модель');
+            aga.mark = prompt('Производитель');
+            aga.year = prompt('Год выпуска');
+            aga.as = prompt('Средняя скорость');
+            return aga;
+            }
+        }
+        
+        car = car.pon(car);
+        console.log(car); 
+        */
+
+        //имя, пол, возраст
+
+        
+        
+        let arr2 = [{
+            name: 'Марина',
+            gender: 'ж',
+            age: 32, 
+        },
+         {
+            name: 'Женя',
+            gender: 'м',
+            age: 23,
+        },
+         {
+            name: 'Вова',
+            gender: 'м',
+            age: 2,
+        },
+         {
+            name: 'даниел',
+            gender: 'м',
+            age: 11,
+        },
+         {
+            name: 'Евгения',
+            gender: 'ж',
+            age: 22,
+        }
+    ] ;
+        function prin(da) {
+            let wo = 0;
+            let man = 0;
+            for ( let item = 0; item <= 4; item++){
+                /* console.log(da[item].gender); */
+                if (da[item].gender == 'ж') {
+                    wo++;
+                } else {
+                    man++;
+                }
+                
+            }
+            console.log('Женщин:' + wo);
+            console.log('Мужчин:' + man);
+        }
+        prin(arr2);
+
+
+    </script>
+</body>
+</html>
